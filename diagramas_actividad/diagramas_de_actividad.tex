@@ -1,0 +1,17 @@
+\section{Diagramas de actividad}
+	\begin{itemize}
+		\item \textbf{Forman parte do modelado dinámico dun sistema.}
+		\item Describen como se coordinan as actividades(flujo básicamente).
+		\item Son moi útiles para mostrar as dependencias que casos de usos individuais poidan ter doutros casos de uso.
+		\item Mostran con claridade as dependencias, cousas que poden executarse en paralelo e "que" debe terminar antes de comezar "outra cousa".
+		\item É lóxico intuir que pra que se produza un cambio de actividade, antes, debe terminar outra actividade.
+		\item Nos diagramas de clase :
+		\begin{itemize}
+			\item As \textbf{actividades} aparecen representadas con óvalos con nome ao igual que os casos de uso nos seus diagramas. Podemos pensar nelas coma nun tipo de estado que se abandona(a actividade que representa termina). Unha actividade pode representar varios pasos inda que non se mostran estes detalles(Non son atómicas).
+			\item Unha \textbf{transición de actividade} representase por unha flecha dirixida a outra actividade. Éstas non deben etiquetarse salvo que a etiqueta represente unha condición necesaria para a seguinte actividade(coma se fose condicional).
+			\item Unha \textbf{barra de sincronización} representase como un trazo groso e horizontal que indica que todas as actividades que apuntan a ela, deben terminar antes de pasar á actividade/s ás que apunta a mesma. As actividades que seguen,no caso de seren mais dunha, podería non ser posible executalas ó mesmo tempo pero isto só indica que a partires da barra se poden facer esas cousas.
+			\item O \textbf{diamante de decisión} úsase para representar decisións(condicionais).
+			\item As \textbf{marcas de inicio/fin} marcan o inicio e fin do diagrama.
+		\end{itemize}
+		\item Existe a posibilidade de representar \textbf{accións} no lugar de actividades, que según o libro "El lenguaje unificado de modelado"(ISBN:84-7829-028-1) se representarían como propuxen mais arriba representar as actividades pasando as actividades a diferenciarse por levar ao final do seu nome uns corchetes "()" nos cales pode haber argumentos pero ésta filosofía sería interesante para unha fase que precisase de moito nivel de detalle, podendo chegar a ser contraproducente en certos casos nos cales tanta definición non farí máis que complicar o diagrama. Destacar que as accións, de representalas, serán \textbf{atómicas}. Podemos ver unha actividade coma un conxunto de accións.
+	\end{itemize}
